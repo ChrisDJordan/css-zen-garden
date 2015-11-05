@@ -1,10 +1,6 @@
 @media screen and (min-width: 420px) {
-
-	 .preamble{
-	 	
-    	margin-top:55px;
-    
-   
+    .preamble {
+        margin-top: 55px;
     }
 }
 
@@ -30,17 +26,13 @@
         }
     }
     .summary {
-        background: green;
+   
         &:before {
             // margin-top:100px;
        
         }
         p {
             clear: both;
-         
-       
         }
     }
-
-
 }
