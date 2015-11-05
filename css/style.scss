@@ -32,9 +32,14 @@ div {}
             background: $bauhaus-gold;
             content: '';
             width: 100%;
-                   -webkit-transform: skewY(-15deg); /* Ch <36, Saf 5.1+, iOS, An =<4.4.4 */
-      -ms-transform: skewY(-15deg); /* IE 9 */
-          transform: skewY(-15deg); /* IE 10, Fx 16+, Op 12.1+ */
+            -webkit-transform: skewY(-15deg);
+            -moz-transform: skewY(-15deg);
+            -o-transform: skewY(-15deg);
+            -ms-transform: skewY(-15deg);
+            transform: skewY(-15deg);
+            -webkit-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
             z-index: 2;
         }
         &:after {
@@ -43,9 +48,14 @@ div {}
             background: #313131;
             content: '';
             width: 100%;
-                    -webkit-transform: skewY(15deg); /* Ch <36, Saf 5.1+, iOS, An =<4.4.4 */
-      -ms-transform: skewY(15deg); /* IE 9 */
-          transform: skewY(15deg); /* IE 10, Fx 16+, Op 12.1+ */
+            -webkit-transform: skewY(15deg);
+            -moz-transform: skewY(15deg);
+            -o-transform: skewY(15deg);
+            -ms-transform: skewY(15deg);
+            transform: skewY(15deg);
+            -webkit-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
             z-index: 2;
             margin-top: 550px;
         }
@@ -74,10 +84,14 @@ div {}
             background: $bauhaus-red;
             display: block;
             // margin-top: 20px;
-            
-            -webkit-transform: skewY(15deg); /* Ch <36, Saf 5.1+, iOS, An =<4.4.4 */
-      -ms-transform: skewY(15deg); /* IE 9 */
-          transform: skewY(15deg); /* IE 10, Fx 16+, Op 12.1+ */
+            -webkit-transform: skewY(15deg);
+            -moz-transform: skewY(15deg);
+            -o-transform: skewY(15deg);
+            -ms-transform: skewY(15deg);
+            transform: skewY(15deg);
+            -webkit-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
             padding: 20px 0 20px 0;
         }
         h3 {
