@@ -56,48 +56,112 @@ a {
   font-size: 18px;
   text-decoration: none; }
 
-h2, h3, p {
+p {
+  width: 90%;
+  font-size: 20px;
+  line-height: 1.4;
+  max-width: 550px;
+  margin: 0 auto; }
+
+h2, h3 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.125rem;
   font-size: 18px;
   line-height: 1.4; }
 
 h3 {
-  font-size: 25px;
-  margin-left: 15px; }
+  font-size: 32px; }
 
 body {
-  background: #F4EDDF;
-  position: relative; }
-  body .page-wrapper header {
+  background: #F4EDDF; }
+
+.page-wrapper header {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 100px; }
+  .page-wrapper header h1 {
+    font-size: 75px; }
+  .page-wrapper header h2 {
+    font-size: 16px; }
+.page-wrapper .summary {
+  float: right;
+  width: 100%;
+  position: relative;
+  margin-top: 100px; }
+  .page-wrapper .summary:before {
+    position: absolute;
+    height: 200px;
+    background: #CABA8D;
+    content: '';
+    width: 100%;
+    transform: skewy(-15deg);
+    z-index: 2; }
+  .page-wrapper .summary:after {
+    position: absolute;
+    height: 200px;
+    background: #313131;
+    content: '';
+    width: 100%;
+    transform: skewy(15deg);
+    z-index: 2;
+    margin-top: 550px; }
+  .page-wrapper .summary p {
+    text-align: right;
+    float: right;
+    margin-right: 5%; }
+    .page-wrapper .summary p:first-child {
+      padding-top: 300px; }
+    .page-wrapper .summary p:last-child {
+      padding: 20px 0 100px 0; }
+.page-wrapper .preamble {
+  float: left;
+  width: 100%; }
+  .page-wrapper .preamble:before {
+    margin-top: 195px;
+    content: 'BAUHAUS';
+    text-align: center;
+    font-family: 'Baumans', cursive;
+    font-size: 70px;
+    background: #BE5841;
+    display: block;
+    transform: skewy(15deg);
+    padding: 20px 0 20px 0; }
+  .page-wrapper .preamble h3 {
     padding-top: 100px;
-    width: 80%;
-    margin: 0 auto; }
-    body .page-wrapper header h1 {
-      text-transform: uppercase;
-      -webkit-transform: rotate(15deg);
-      -moz-transform: rotate(15deg);
-      -ms-transform: rotate(15deg);
-      -o-transform: rotate(15deg);
-      transform: rotate(15deg);
-      text-align: right;
-      font-size: 60px; }
-      body .page-wrapper header h1:after {
-        display: block;
-        content: "2015";
-        border-bottom: 5px solid black;
-        color: #BE5841; }
-    body .page-wrapper header h2 {
-      font-size: 1.563rem;
-      font-size: 20px;
-      padding-top: 20px;
-      padding-bottom: 100px;
-      margin-right: 42px;
-      text-align: right;
-      -webkit-transform: rotate(15deg);
-      -moz-transform: rotate(15deg);
-      -ms-transform: rotate(15deg);
-      -o-transform: rotate(15deg);
-      transform: rotate(15deg); }
+    border-bottom: 3px solid #313131;
+    margin-left: 5%; }
+  .page-wrapper .preamble p {
+    margin-left: 5%;
+    padding-top: 10px; }
+    .page-wrapper .preamble p:last-child {
+      padding-bottom: 100px; }
+  .page-wrapper .preamble:after {
+    position: absolute;
+    height: 200px;
+    background: #CABA8D;
+    content: '';
+    width: 100%;
+    transform: skewy(-15deg);
+    z-index: 2; }
+
+@media screen and (min-width: 420px) {
+  .preamble {
+    margin-top: 55px; } }
+@media screen and (min-width: 768px) {
+  .page-wrapper header {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    z-index: 10; }
+    .page-wrapper header h1 {
+      font-size: 120px; }
+    .page-wrapper header h2 {
+      font-size: 50px; }
+
+  .summary {
+    background: green; }
+    .summary p {
+      clear: both; } }
 
 /*# sourceMappingURL=style.css.map */
